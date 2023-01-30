@@ -30,6 +30,10 @@ app.get('/get',(req,res) => {
     })
 })
 
+app.get('/',(req,res) => {
+    res.send("Working")
+})
+
 app.listen(process.env.PORT || 3001,() => {
     console.log('Server is running...')
 })
